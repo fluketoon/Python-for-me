@@ -67,4 +67,17 @@ CheckStyle("Thailand", 100)
 
 #---------------- Try to upload and update on GITHUB
 
+def CheckStyle2(Style, Money):
+    if Money>= 1000 and Style in StyleList:
+        print("you are allowed to come in")
+    elif Style not in StyleList and Money > 2000:
+        print("you are not in the list but you have enogh money. You can come in!!")
+    else:
+        print("you are not allowed to come in")
+
+CheckStyle2("Japan",10000)
+CheckStyle2("USA",500)
+CheckStyle2("Vietnam",5000)
+CheckStyle2("Thailand", 100)
+
     
